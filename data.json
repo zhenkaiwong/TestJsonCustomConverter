@@ -1,0 +1,16 @@
+[
+  {
+    "name": "James",
+    "occupation": "Software Engineer",
+    "payload": {
+      "age": 28
+    }
+  },
+  {
+    "name": "Lisa",
+    "occupation": "Quantity Surveyor",
+    "payload": {
+      "hobby": "Play pickle ball"
+    }
+  }
+]
