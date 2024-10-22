@@ -45,4 +45,4 @@ You might notice that I built 2 custom converter:
 
 `CustomJsonConverter` is my first custom converter. I used the reader object (`Utf8JsonReader`) to read from JSON. However, after I completed this convert, I realized that this implementation is not the best implementation, because the code is hard to read, which can lead to higher complexity
 
-Therefore I built the second converter: `CustomJsonConverterJsonDocument`. This implementation use `JsonDocument.GetValue()`, which take a `Utf8JsonReader` as method input. This allow me to use type like `JsonDocument` or `JsonElement`, and the code readability is vastly improved.
+Therefore I built the second converter: `CustomJsonConverterJsonDocument`. This implementation use `JsonDocument.ParseValue()`, which take a `Utf8JsonReader` as method input. This allow me to use type like `JsonDocument` or `JsonElement`, and the code readability is vastly improved.
