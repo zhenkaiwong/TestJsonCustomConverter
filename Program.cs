@@ -15,7 +15,8 @@ class Program
             PropertyNameCaseInsensitive = true
         };
 
-        serializeOptions.Converters.Add(new CustomJsonConverter());
+        // serializeOptions.Converters.Add(new CustomJsonConverter());
+        serializeOptions.Converters.Add(new CustomJsonConverterJsonDocument());
 
         List<Person>? people = JsonSerializer.Deserialize<List<Person>>(jsonContent, serializeOptions);
 

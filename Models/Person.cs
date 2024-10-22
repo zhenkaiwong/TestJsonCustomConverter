@@ -10,6 +10,14 @@ public class Person
   public string? Occupation { get; set; }
   public IPersonPayload? Payload { get; set; }
 
+  public Person() { }
+  public Person(Person person, IPersonPayload payload)
+  {
+    Name = person.Name;
+    Occupation = person.Occupation;
+    Payload = payload;
+  }
+
   public override string ToString()
   {
     StringBuilder stringBuilder = new StringBuilder();
